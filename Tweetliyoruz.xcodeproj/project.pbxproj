@@ -3,25 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D984E21BB4D6DB82725A925 /* Pods_Tweetliyoruz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7026294CA3068E8C311EB9 /* Pods_Tweetliyoruz.framework */; };
 		AFC25C2223324D21003362B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC25C2123324D21003362B2 /* AppDelegate.swift */; };
-		AFC25C2423324D21003362B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC25C2323324D21003362B2 /* ViewController.swift */; };
-		AFC25C2723324D21003362B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC25C2523324D21003362B2 /* Main.storyboard */; };
+		AFC25C2423324D21003362B2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC25C2323324D21003362B2 /* LoginViewController.swift */; };
+		AFC25C2723324D21003362B2 /* AuthFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC25C2523324D21003362B2 /* AuthFlow.storyboard */; };
 		AFC25C2923324D24003362B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC25C2823324D24003362B2 /* Assets.xcassets */; };
 		AFC25C2C23324D24003362B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC25C2A23324D24003362B2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		136EC1E13918003F714F58DD /* Pods-Tweetliyoruz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tweetliyoruz.debug.xcconfig"; path = "Target Support Files/Pods-Tweetliyoruz/Pods-Tweetliyoruz.debug.xcconfig"; sourceTree = "<group>"; };
+		3E7026294CA3068E8C311EB9 /* Pods_Tweetliyoruz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tweetliyoruz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC25C1E23324D21003362B2 /* Tweetliyoruz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tweetliyoruz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC25C2123324D21003362B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFC25C2323324D21003362B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AFC25C2623324D21003362B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFC25C2323324D21003362B2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AFC25C2623324D21003362B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AuthFlow.storyboard; sourceTree = "<group>"; };
 		AFC25C2823324D24003362B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFC25C2B23324D24003362B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFC25C2D23324D24003362B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B046CB1791C51C322F11C07B /* Pods-Tweetliyoruz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tweetliyoruz.release.xcconfig"; path = "Target Support Files/Pods-Tweetliyoruz/Pods-Tweetliyoruz.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D984E21BB4D6DB82725A925 /* Pods_Tweetliyoruz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				AFC25C2023324D21003362B2 /* Tweetliyoruz */,
 				AFC25C1F23324D21003362B2 /* Products */,
+				D20B9B5D68900DFDA3A0C91C /* Pods */,
+				FDC397EE0182373FCCF1B0C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +61,63 @@
 		AFC25C2023324D21003362B2 /* Tweetliyoruz */ = {
 			isa = PBXGroup;
 			children = (
-				AFC25C2123324D21003362B2 /* AppDelegate.swift */,
-				AFC25C2323324D21003362B2 /* ViewController.swift */,
-				AFC25C2523324D21003362B2 /* Main.storyboard */,
-				AFC25C2823324D24003362B2 /* Assets.xcassets */,
-				AFC25C2A23324D24003362B2 /* LaunchScreen.storyboard */,
-				AFC25C2D23324D24003362B2 /* Info.plist */,
+				AFC25C3723324E57003362B2 /* Model */,
+				AFC25C3623324E33003362B2 /* Supporting Files */,
+				AFC25C3523324E20003362B2 /* Controller */,
+				AFC25C3423324E0B003362B2 /* View */,
 			);
 			path = Tweetliyoruz;
+			sourceTree = "<group>";
+		};
+		AFC25C3423324E0B003362B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFC25C2523324D21003362B2 /* AuthFlow.storyboard */,
+				AFC25C2A23324D24003362B2 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFC25C3523324E20003362B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AFC25C2323324D21003362B2 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AFC25C3623324E33003362B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFC25C2123324D21003362B2 /* AppDelegate.swift */,
+				AFC25C2823324D24003362B2 /* Assets.xcassets */,
+				AFC25C2D23324D24003362B2 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFC25C3723324E57003362B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D20B9B5D68900DFDA3A0C91C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				136EC1E13918003F714F58DD /* Pods-Tweetliyoruz.debug.xcconfig */,
+				B046CB1791C51C322F11C07B /* Pods-Tweetliyoruz.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FDC397EE0182373FCCF1B0C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E7026294CA3068E8C311EB9 /* Pods_Tweetliyoruz.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFC25C3023324D24003362B2 /* Build configuration list for PBXNativeTarget "Tweetliyoruz" */;
 			buildPhases = (
+				C08FA77BF961BEC89AFD03C8 /* [CP] Check Pods Manifest.lock */,
 				AFC25C1A23324D21003362B2 /* Sources */,
 				AFC25C1B23324D21003362B2 /* Frameworks */,
 				AFC25C1C23324D21003362B2 /* Resources */,
+				2F1FE66E6197085B293CEA6C /* [CP] Embed Pods Frameworks */,
+				56C57A1E1C42A21735276D40 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,18 +182,77 @@
 			files = (
 				AFC25C2C23324D24003362B2 /* LaunchScreen.storyboard in Resources */,
 				AFC25C2923324D24003362B2 /* Assets.xcassets in Resources */,
-				AFC25C2723324D21003362B2 /* Main.storyboard in Resources */,
+				AFC25C2723324D21003362B2 /* AuthFlow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F1FE66E6197085B293CEA6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tweetliyoruz/Pods-Tweetliyoruz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tweetliyoruz/Pods-Tweetliyoruz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tweetliyoruz/Pods-Tweetliyoruz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56C57A1E1C42A21735276D40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tweetliyoruz/Pods-Tweetliyoruz-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tweetliyoruz/Pods-Tweetliyoruz-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tweetliyoruz/Pods-Tweetliyoruz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C08FA77BF961BEC89AFD03C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tweetliyoruz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AFC25C1A23324D21003362B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFC25C2423324D21003362B2 /* ViewController.swift in Sources */,
+				AFC25C2423324D21003362B2 /* LoginViewController.swift in Sources */,
 				AFC25C2223324D21003362B2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,12 +260,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AFC25C2523324D21003362B2 /* Main.storyboard */ = {
+		AFC25C2523324D21003362B2 /* AuthFlow.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AFC25C2623324D21003362B2 /* Base */,
 			);
-			name = Main.storyboard;
+			name = AuthFlow.storyboard;
 			sourceTree = "<group>";
 		};
 		AFC25C2A23324D24003362B2 /* LaunchScreen.storyboard */ = {
@@ -279,15 +397,17 @@
 		};
 		AFC25C3123324D24003362B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 136EC1E13918003F714F58DD /* Pods-Tweetliyoruz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Tweetliyoruz/Info.plist;
+				DEVELOPMENT_TEAM = M9437KP6T5;
+				INFOPLIST_FILE = "$(SRCROOT)/Tweetliyoruz/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Tweetliyoruz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goh.Tweetliyoruz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,15 +416,17 @@
 		};
 		AFC25C3223324D24003362B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B046CB1791C51C322F11C07B /* Pods-Tweetliyoruz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Tweetliyoruz/Info.plist;
+				DEVELOPMENT_TEAM = M9437KP6T5;
+				INFOPLIST_FILE = "$(SRCROOT)/Tweetliyoruz/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Tweetliyoruz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goh.Tweetliyoruz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
